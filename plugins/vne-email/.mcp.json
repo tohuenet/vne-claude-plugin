@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vne-email": {
+      "type": "http",
+      "url": "https://app.vne.email/api/v1/mcp"
+    }
+  }
+}

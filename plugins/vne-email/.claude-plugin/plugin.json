@@ -1,0 +1,8 @@
+{
+  "name": "vne-email",
+  "version": "1.0.0",
+  "description": "Nối Claude Code với email, khách hàng, công việc và số liệu VNe — đăng nhập một lần, kèm sẵn cách dùng.",
+  "author": { "name": "VNe Workspace", "url": "https://vne.email" },
+  "homepage": "https://vne.email/huong-dan/nguoi-dung",
+  "keywords": ["vne", "email", "crm", "mcp", "vietnam"]
+}

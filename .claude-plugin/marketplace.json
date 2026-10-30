@@ -1,0 +1,14 @@
+{
+  "name": "vne",
+  "owner": { "name": "VNe Workspace", "url": "https://vne.email" },
+  "metadata": {
+    "description": "Plugin chính thức của VNe Workspace (vne.email) cho Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "vne-email",
+      "source": "./plugins/vne-email",
+      "description": "Nối Claude Code với email, khách hàng, công việc và số liệu VNe — đăng nhập một lần, kèm sẵn cách dùng."
+    }
+  ]
+}
