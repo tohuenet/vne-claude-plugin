@@ -31,7 +31,7 @@ Chỉ công cụ mà quyền đã cấp mở khoá mới hiện ra. Không chắ
 
 | Công cụ | Dùng để |
 |---|---|
-| `whoami` | Ai đang nối, tổ chức nào, quyền gì, **giờ hiện tại (giờ Việt Nam)** — dùng để tính «tháng này», «quý này». |
+| `whoami` | Ai đang nối, tổ chức nào, quyền gì, **giờ hiện tại (giờ Việt Nam)** — dùng để tính «tháng này», «quý này»; `mailboxes` = MỌI hộp thư dùng được (cá nhân, hộp chung, hộp bàn giao, gửi được không). |
 | `contacts_search` | Tìm khách theo tên/email/SĐT → `contact_id` (không trả email/SĐT). |
 | `customer_context` | Toàn cảnh MỘT khách: công ty, deal, báo giá, hợp đồng, hoá đơn, việc, dòng thời gian, thư gần nhất. Nhận `contact_id` **hoặc** `email`. |
 | `crm_report` | Doanh thu / đã thu / còn phải thu theo nhân viên, tháng, khách. Bỏ trống `from`/`to` = từ đầu quý tới nay. |
@@ -54,6 +54,9 @@ Chuỗi hay dùng:
   (YYYY-MM-DD) → `crm_report`. So sánh kỳ trước = gọi thêm một lần.
 - «Hôm nay tôi cần làm gì»: `work_overview`, sắp theo mức gấp.
 - «Thư nào cần trả lời»: `mail_search`, bỏ bản tin/thư tự động, chỉ giữ người thật đang chờ.
+- Hỏi về một hộp khác («hộp tuvan@», «thư bên kế toán»): lấy địa chỉ trong `whoami.mailboxes`, truyền
+  `mailbox=<địa chỉ>`. Hộp không có trong danh sách = người dùng chưa được thêm vào hộp đó trong VNe
+  (nhờ quản trị viên), đừng nói «token chỉ gắn với một hộp».
 
 Mẫu dựng sẵn: gõ `/` trong Claude Code rồi tìm `my_day`, `customer_brief`, `sales_report`,
 `mail_to_reply`, `renewals_due`, `tasks_from_note`.
